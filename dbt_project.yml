@@ -35,5 +35,12 @@ models:
   dbt_demo:
       # Applies to all files under models/example/
       example:
-          materialized: view
+          materialized: view 
           +schema: 'Staging'
+models:
+  dbt_demo:
+      # Applies to all files under models/snowflake_sample_data/
+     snowflake_sample_data: 
+         materialized: view 
+         +schema: 'staging'
+         
